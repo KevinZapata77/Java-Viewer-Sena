@@ -13,3 +13,40 @@
 SENA Viewer es una aplicación de consola que simula una plataforma de visualización de contenido multimedia. Implementa Programación Orientada a Objetos en Java con herencia entre `Contenido` → `Pelicula` / `Serie`.
 
 ## Estructura del proyecto
+```
+SENA-Viewer
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── sena
+│   │   │           └── viewer
+│   │   │               ├── Contenido.java
+│   │   │               ├── Pelicula.java
+│   │   │               ├── Serie.java
+│   │   │               └── SENAViewer.java
+│   │   └── resources
+│   │       └── data
+
+ 
+## Diagrama de Clases
+(         ┌──────────────────────┐
+          │      Contenido       │
+          ├──────────────────────┤
+          │ - titulo:String      │
+          │ - duracion:int       │
+          │ - categoria:String   │
+          ├──────────────────────┤
+          │ + reproducir():void  │
+          │ + mostrarInfo():void │
+          └─────────▲────────────┘
+       ┌─────────────┼──────────────┐
+       │             │              │
+┌────────────┐ ┌────────────┐ ┌───────────────┐
+│  Pelicula  │ │   Serie    │ │  Documental   │
+└────────────┘ └────────────┘ └───────────────┘
+
+
+## Cómo ejecutar
+javac Main.java  
+java Main
