@@ -1,18 +1,15 @@
-## Getting Started
+# 🎬 SENA Viewer
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**Proyecto:** GA1-220501096-04-AA1-EV06 — SENA Viewer  
+**Lenguaje:** Java (JDK 17+)
 
-## Folder Structure
+## Integrantes y roles
+- Nombre 1 — Líder técnico (Kevin Zapata)
+- Nombre 2 — Git Master / Backend (Luis Mendez)
+- Nombre 3 — Documentador / QA (Carolina Zuluaga)
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Descripción
+SENA Viewer es una aplicación de consola que simula una plataforma de visualización de contenido multimedia. Implementa Programación Orientada a Objetos en Java con herencia entre `Contenido` → `Pelicula` / `Serie`.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Estructura del proyecto
