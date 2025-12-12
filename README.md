@@ -48,5 +48,4 @@ SENA-Viewer
 
 
 ## Cómo ejecutar
-javac Main.java  
-java Main
+java -cp "bin\main\java" viewer.Main
