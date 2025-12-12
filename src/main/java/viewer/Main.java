@@ -19,16 +19,25 @@ public class Main {
             opcion = sc.nextInt();
 
             switch (opcion) {
+
                 case 1 -> app.mostrarBiblioteca();
-                case 2 -> {
+
+                case 2 ->  {
+                    System.out.println("\n===== CONTENIDO DISPONIBLE =====");
+                    app.mostrarBiblioteca();   // 👈 Mostrar la lista antes
                     System.out.print("Ingrese el número del contenido: ");
                     app.reproducir(sc.nextInt());
                 }
+
                 case 3 -> {
+                    System.out.println("\n===== CONTENIDO DISPONIBLE =====");
+                    app.mostrarBiblioteca();   // 👈 Mostrar la lista antes
                     System.out.print("Ingrese el número del contenido: ");
                     app.verDetalles(sc.nextInt());
                 }
+
                 case 0 -> System.out.println("Saliendo del sistema...");
+                
                 default -> System.out.println("Opción no válida.");
             }
 
