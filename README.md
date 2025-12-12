@@ -30,23 +30,29 @@ SENA-Viewer
 
  
 ## Diagrama de Clases
-(         ┌──────────────────────┐
-          │      Contenido       │
-          ├──────────────────────┤
-          │ - titulo:String      │
-          │ - duracion:int       │
-          │ - categoria:String   │
-          ├──────────────────────┤
-          │ + reproducir():void  │
-          │ + mostrarInfo():void │
-          └─────────▲────────────┘
-       ┌─────────────┼──────────────┐
-       │             │              │
-┌────────────┐ ┌────────────┐ ┌───────────────┐
-│  Pelicula  │ │   Serie    │ │  Documental   │
-└────────────┘ └────────────┘ └───────────────┘
+(               ┌──────────────────────────┐
+                │        Contenido         │
+                ├──────────────────────────┤
+                │ - titulo : String        │
+                │ - duracion : int         │
+                │ - categoria : String     │
+                ├──────────────────────────┤
+                │ + reproducir() : void    │
+                │ + mostrarInfo() : void   │
+                └──────────────▲───────────┘
+                               │
+         ┌─────────────────────┼─────────────────────┐
+         │                     │                     │
+ ┌────────────────┐   ┌────────────────┐   ┌───────────────────┐
+ │    Pelicula    │   │     Serie      │   │    Documental     │
+ ├────────────────┤   ├────────────────┤   ├───────────────────┤
+ │ (opcional)     │   │ (opcional)     │   │ (opcional)        │
+ │ + atributos…   │   │ + atributos…   │   │ + atributos…      │
+ └────────────────┘   └────────────────┘   └───────────────────┘
+
+## Cómo compilar  
+javac -d bin src/main/java/viewer/*.java
 
 
 ## Cómo ejecutar
-javac Main.java  
-java Main
+java -cp "bin\classes" viewer.Main
